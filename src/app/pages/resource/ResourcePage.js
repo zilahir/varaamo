@@ -26,8 +26,8 @@ import ResourceHeader from './resource-header/ResourceHeader';
 import ResourceInfo from './resource-info/ResourceInfo';
 import ResourceMapInfo from './resource-map-info/ResourceMapInfo';
 import resourcePageSelector from './resourcePageSelector';
-import ResourceMap from '../../../src/domain/resource/map/ResourceMap';
-import ResourceReservationCalendar from '../../../src/domain/resource/reservationCalendar/ResourceReservationCalendar';
+import ResourceMap from '../../../domain/resource/map/ResourceMap';
+import ResourceReservationCalendar from '../../../domain/resource/reservationCalendar/ResourceReservationCalendar';
 
 class UnconnectedResourcePage extends Component {
   static propTypes = {
@@ -185,9 +185,9 @@ class UnconnectedResourcePage extends Component {
                 <Col lg={8} md={8} xs={12}>
                   <div className="app-ResourcePage__content">
                     {mainImage
-                    && this.renderImage(mainImage, mainImageIndex, {
-                      mainImageMobileVisibility: true,
-                    })}
+                      && this.renderImage(mainImage, mainImageIndex, {
+                        mainImageMobileVisibility: true,
+                      })}
                     <ResourceInfo
                       isLoggedIn={isLoggedIn}
                       resource={resource}
@@ -215,11 +215,11 @@ class UnconnectedResourcePage extends Component {
 
                           {/* Show reservation max period text */}
                           {resource.minPeriod
-                          && (
-                            <div className="app-ResourcePage__content-min-period">
-                              <p>{`${t('ReservationInfo.reservationMinLength')} ${minPeriodText}`}</p>
-                            </div>
-                          )
+                            && (
+                              <div className="app-ResourcePage__content-min-period">
+                                <p>{`${t('ReservationInfo.reservationMinLength')} ${minPeriodText}`}</p>
+                              </div>
+                            )
                           }
 
                           <ResourceCalendar

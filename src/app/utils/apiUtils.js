@@ -7,7 +7,7 @@ import { RSAA, getJSON } from 'redux-api-middleware';
 import constants from '../constants/AppConstants';
 
 function buildAPIUrl(endpoint, params) {
-  let url = `${constants.API_URL}/${endpoint}/`;
+  let url = `${constants.REACT_APP_API_URL}/${endpoint}/`;
 
   const nonEmptyParams = pickBy(params, value => value !== '');
 

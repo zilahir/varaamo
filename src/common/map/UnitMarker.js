@@ -5,7 +5,7 @@ import React from 'react';
 import get from 'lodash/get';
 import { Marker } from 'react-leaflet';
 
-import highlightedIcon from '../../../app/assets/map/highlighted-marker-icon-2x.png';
+import highlightedIcon from '../../app/assets/map/highlighted-marker-icon-2x.png';
 
 const getIcon = (count, isHighlighted = false) => {
   return L.divIcon({

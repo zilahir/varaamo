@@ -1,7 +1,7 @@
 import axios from 'axios';
 import get from 'lodash/get';
 
-import constants from '../../../app/constants/AppConstants';
+import constants from '../../app/constants/AppConstants';
 import store from '../../store';
 
 let authToken;
@@ -135,4 +135,4 @@ export class ApiClient {
   });
 }
 
-export default new ApiClient(constants.API_URL);
+export default new ApiClient(constants.REACT_APP_API_URL);

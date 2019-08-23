@@ -64,17 +64,17 @@ By default the running app can be found at `localhost:3000`.
     OR prepare .env with default content:
 
     ```
-    CLIENT_ID
-    CLIENT_SECRET
-    SESSION_SECRET
-    TARGET_APP
-    API_URL
+    REACT_APP_CLIENT_ID
+    REACT_APP_CLIENT_SECRET
+    REACT_APP_SESSION_SECRET
+    REACT_APP_TARGET_APP
+    REACT_APP_API_URL
     CUSTOM_MUNICIPALITY_OPTIONS
     ```
 
     Environment's variable guideline:
 
-    - `API_URL`:
+    - `REACT_APP_API_URL`:
       Custom config to replace global application's api URL. Expected value is valid URL string.
 
     - `CUSTOM_MUNICIPALITY_OPTIONS`:

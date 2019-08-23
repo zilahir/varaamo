@@ -6,13 +6,13 @@ import { render } from 'react-dom';
 import { Provider } from 'react-intl-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import '../app/assets/styles/main.scss';
-import '../app/assets/styles/customization/espoo/customization.scss';
-import '../app/assets/styles/customization/vantaa/customization.scss';
+import './app/assets/styles/main.scss';
+import './app/assets/styles/customization/espoo/customization.scss';
+import './app/assets/styles/customization/vantaa/customization.scss';
 
 import store from './store';
 import getRoutes from './routes';
-import BrowserWarning from '../app/pages/browser-warning/BrowserWarning';
+import BrowserWarning from './app/pages/browser-warning/BrowserWarning';
 
 const isIEBrowser = browserName === 'IE';
 

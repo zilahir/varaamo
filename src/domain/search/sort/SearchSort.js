@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { injectIntl, intlShape } from 'react-intl';
 
-import injectT from '../../../../app/i18n/injectT';
+import injectT from '../../../app/i18n/injectT';
 import SelectFilter from '../filters/filter/SelectFilter';
 
 const SearchSort = ({

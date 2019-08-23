@@ -2,7 +2,7 @@ import React from 'react';
 import { DropdownButton, MenuItem } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 
-import injectT from '../../../../../app/i18n/injectT';
+import injectT from '../../../../app/i18n/injectT';
 
 const ManageReservationsDropdown = ({
   t, onInfoClick, reservation

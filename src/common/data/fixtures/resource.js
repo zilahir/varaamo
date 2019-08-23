@@ -1,6 +1,6 @@
 import { Factory } from 'rosie';
 
-import { DEFAULT_SLOT_SIZE } from '../../../../app/constants/SlotConstants';
+import { DEFAULT_SLOT_SIZE } from '../../../app/constants/SlotConstants';
 import * as fixtureUtils from './utils';
 
 export default new Factory()

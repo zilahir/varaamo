@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import get from 'lodash/get';
 
 import ManageReservationsStatus from '../manage/status/ManageReservationsStatus';
-import injectT from '../../../../app/i18n/injectT';
+import injectT from '../../../app/i18n/injectT';
 import { getDateAndTime } from '../manage/list/ManageReservationsList';
 
 const ReservationInfomationModal = ({

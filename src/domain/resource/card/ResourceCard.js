@@ -12,19 +12,19 @@ import iconTicket from 'hel-icons/dist/shapes/ticket.svg';
 import iconUser from 'hel-icons/dist/shapes/user-o.svg';
 import iconHeart from 'hel-icons/dist/shapes/heart-o.svg';
 
-import injectT from '../../../../app/i18n/injectT';
-import iconMap from '../../../../app/assets/icons/map.svg';
-import iconHeartFilled from '../../../../app/assets/icons/heart-filled.svg';
+import injectT from '../../../app/i18n/injectT';
+import iconMap from '../../../app/assets/icons/map.svg';
+import iconHeartFilled from '../../../app/assets/icons/heart-filled.svg';
 import * as dataUtils from '../../../common/data/utils';
 import * as urlUtils from '../../../common/url/utils';
 import * as searchUtils from '../../search/utils';
 import * as resourceUtils from '../utils';
-import BackgroundImage from '../../../../app/shared/background-image/BackgroundImage';
-import { getMainImage } from '../../../../app/utils/imageUtils';
+import BackgroundImage from '../../../app/shared/background-image/BackgroundImage';
+import { getMainImage } from '../../../app/utils/imageUtils';
 import ResourceAvailability from '../availability/ResourceAvailability';
-import UnpublishedLabel from '../../../../app/shared/label/unpublished/UnpublishedLabel';
+import UnpublishedLabel from '../../../app/shared/label/unpublished/UnpublishedLabel';
 import ResourceCardInfoCell from './ResourceCardInfoCell';
-import { isLoggedInSelector } from '../../../../app/state/selectors/authSelectors';
+import { isLoggedInSelector } from '../../../app/state/selectors/authSelectors';
 
 
 class ResourceCard extends React.Component {

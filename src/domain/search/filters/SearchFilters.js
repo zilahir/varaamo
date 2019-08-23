@@ -12,15 +12,15 @@ import Button from 'react-bootstrap/lib/Button';
 import Panel from 'react-bootstrap/lib/Panel';
 import Grid from 'react-bootstrap/lib/Grid';
 
-import constants from '../../../../app/constants/AppConstants';
+import constants from '../../../app/constants/AppConstants';
 import * as searchUtils from '../utils';
-import injectT from '../../../../app/i18n/injectT';
+import injectT from '../../../app/i18n/injectT';
 import TextFilter from './filter/TextFilter';
 import DateFilter from './filter/DateFilter';
 import SelectFilter from './filter/SelectFilter';
 import ToggleFilter from './filter/ToggleFilter';
 import TimeRangeFilter from './filter/TimeRangeFilter';
-import PositionControl from '../../../../app/pages/search/controls/PositionControl';
+import PositionControl from '../../../app/pages/search/controls/PositionControl';
 import iconTimes from './images/times.svg';
 
 class SearchFilters extends React.Component {

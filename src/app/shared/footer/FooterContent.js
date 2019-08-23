@@ -6,7 +6,7 @@ import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
 import { Link } from 'react-router-dom';
 
-import { version } from '../../../package.json';
+import { version } from '../../../../package.json';
 import FeedbackLink from '../feedback-link/FeedbackLink';
 import Logo from '../logo/Logo';
 import injectT from '../../i18n/injectT';
@@ -107,7 +107,7 @@ FooterContent.propTypes = {
 };
 
 FooterContent.defaultProps = {
-  onLinkClick: () => {},
+  onLinkClick: () => { },
 };
 
 export default injectT(FooterContent);

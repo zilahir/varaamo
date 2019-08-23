@@ -4,7 +4,7 @@ import get from 'lodash/get';
 import capitalize from 'lodash/capitalize';
 import Label from 'react-bootstrap/lib/Label';
 
-import injectT from '../../../../../app/i18n/injectT';
+import injectT from '../../../../app/i18n/injectT';
 
 export const getLabelStyle = (status) => {
   switch (status) {

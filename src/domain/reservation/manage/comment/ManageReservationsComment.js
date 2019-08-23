@@ -3,7 +3,7 @@ import { FormattedMessage } from 'react-intl';
 import PropTypes from 'prop-types';
 
 import PopoverOverlay from '../../../../common/popover/PopoverOverlay';
-import commentIcon from '../../../../../app/assets/icons/comment.svg';
+import commentIcon from '../../../../app/assets/icons/comment.svg';
 
 const ManageReservationsComment = ({ comments }) => (
   <div className="app-ManageReservationComments">

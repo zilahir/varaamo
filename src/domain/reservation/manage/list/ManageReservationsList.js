@@ -6,7 +6,7 @@ import { Table } from 'react-bootstrap';
 import { injectIntl, intlShape } from 'react-intl';
 
 import * as dataUtils from '../../../../common/data/utils';
-import injectT from '../../../../../app/i18n/injectT';
+import injectT from '../../../../app/i18n/injectT';
 import ManageReservationsStatus from '../status/ManageReservationsStatus';
 import ManageReservationsPincode from '../pincode/ManageReservationsPincode';
 import ManageReservationsComment from '../comment/ManageReservationsComment';

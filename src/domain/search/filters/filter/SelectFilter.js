@@ -6,7 +6,7 @@ import Select from 'react-select';
 import isArray from 'lodash/isArray';
 import classNames from 'classnames';
 
-import injectT from '../../../../../app/i18n/injectT';
+import injectT from '../../../../app/i18n/injectT';
 
 class SelectFilter extends React.Component {
   static propTypes = {

@@ -5,8 +5,8 @@ import Loader from 'react-loader';
 import { withRouter } from 'react-router-dom';
 import { Grid, Row, Col } from 'react-bootstrap';
 
-import PageWrapper from '../../../../../app/pages/PageWrapper';
-import injectT from '../../../../../app/i18n/injectT';
+import PageWrapper from '../../../../app/pages/PageWrapper';
+import injectT from '../../../../app/i18n/injectT';
 import client from '../../../../common/api/client';
 import ManageReservationsFilters from '../filters/ManageReservationsFilters';
 import ManageReservationsList from '../list/ManageReservationsList';

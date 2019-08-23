@@ -13,9 +13,9 @@ import get from 'lodash/get';
 import classNames from 'classnames';
 import Button from 'react-bootstrap/lib/Button';
 
-import constants from '../../../../app/constants/AppConstants';
+import constants from '../../../app/constants/AppConstants';
 import * as resourceUtils from '../utils';
-import injectT from '../../../../app/i18n/injectT';
+import injectT from '../../../app/i18n/injectT';
 
 class ResourceReservationCalendar extends React.Component {
   calendarRef = React.createRef();

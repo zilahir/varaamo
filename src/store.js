@@ -1,9 +1,9 @@
 import { createStore } from 'redux';
 import Immutable from 'seamless-immutable';
 
-import initI18n from '../app/i18n/initI18n';
-import configureStore from '../app/store/configureStore';
-import rootReducer from '../app/state/rootReducer';
+import initI18n from './app/i18n/initI18n';
+import configureStore from './app/store/configureStore';
+import rootReducer from './app/state/rootReducer';
 
 const initialStoreState = createStore(rootReducer, {}).getState();
 const initialServerState = window.INITIAL_STATE;

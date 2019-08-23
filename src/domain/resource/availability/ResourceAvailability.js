@@ -2,8 +2,8 @@ import moment from 'moment';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import Label from '../../../../app/shared/label/Label';
-import injectT from '../../../../app/i18n/injectT';
+import Label from '../../../app/shared/label/Label';
+import injectT from '../../../app/i18n/injectT';
 import * as resourceUtils from '../utils';
 
 const ResourceAvailability = ({ date, resource, t }) => {

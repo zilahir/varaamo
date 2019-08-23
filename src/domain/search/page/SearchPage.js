@@ -10,11 +10,11 @@ import {
 } from 'react-router-dom';
 import { Row, Col } from 'react-bootstrap';
 
-import constants from '../../../../app/constants/AppConstants';
-import injectT from '../../../../app/i18n/injectT';
+import constants from '../../../app/constants/AppConstants';
+import injectT from '../../../app/i18n/injectT';
 import client from '../../../common/api/client';
 import * as searchUtils from '../utils';
-import PageWrapper from '../../../../app/pages/PageWrapper';
+import PageWrapper from '../../../app/pages/PageWrapper';
 import SearchFilters from '../filters/SearchFilters';
 import SearchListResults from '../results/SearchListResults';
 import SearchMapResults from '../results/SearchMapResults';
@@ -224,7 +224,7 @@ class SearchPage extends React.Component {
       coords,
     } = this.state;
 
-    const filters = searchUtils.getFiltersFromUrl(location);
+    const filters = searchUtils.getFiltersFromUrl(window.location);
     const pageTitle = t('SearchPage.title');
 
     return (
@@ -245,12 +245,12 @@ class SearchPage extends React.Component {
             if (button === 'list') {
               history.push({
                 pathname: match.path,
-                search: location.search,
+                search: window.location.search,
               });
             } else {
               history.push({
                 pathname: `${match.path}/${button}`,
-                search: location.search,
+                search: window.location.search,
               });
             }
           }}

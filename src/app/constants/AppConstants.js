@@ -1,5 +1,5 @@
 export default {
-  API_URL: SETTINGS.API_URL,
+  REACT_APP_API_URL: process.env.REACT_APP_API_URL,
   CUSTOMIZATIONS: {
     'varaamo.espoo.fi': 'ESPOO',
     'varaamotest-espoo.hel.ninja': 'ESPOO',
@@ -46,7 +46,7 @@ export default {
   },
   SEARCH_PAGE_SIZE: 30,
   DEFAULT_MUNICIPALITY_OPTIONS: ['Helsinki', 'Espoo', 'Vantaa'],
-  SHOW_TEST_SITE_MESSAGE: SETTINGS.SHOW_TEST_SITE_MESSAGE,
+  SHOW_TEST_SITE_MESSAGE: Boolean(process.env.SHOW_TEST_SITE_MESSAGE),
   SUPPORTED_LANGUAGES: ['en', 'fi', 'sv'],
   SUPPORTED_SEARCH_FILTERS: {
     freeOfCharge: '',
@@ -65,7 +65,7 @@ export default {
   },
   TIME_FORMAT: 'H:mm',
   TIME_SLOT_DEFAULT_LENGTH: 30,
-  TRACKING: SETTINGS.TRACKING,
+  TRACKING: Boolean(process.env.PIWIK_SITE_ID),
   SORT_BY_OPTIONS: {
     NAME: 'resource_name_lang',
     TYPE: 'type_name_lang',

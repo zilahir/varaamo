@@ -6,7 +6,7 @@ import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
 import classNames from 'classnames';
 
-import injectT from '../../../../app/i18n/injectT';
+import injectT from '../../../app/i18n/injectT';
 
 SearchMapToggle.propTypes = {
   active: PropTypes.string.isRequired,

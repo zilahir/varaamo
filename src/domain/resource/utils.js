@@ -9,7 +9,7 @@ import moment from 'moment';
 import * as urlUtils from '../../common/url/utils';
 import * as dataUtils from '../../common/data/utils';
 import * as reservationUtils from '../reservation/utils';
-import constants from '../../../app/constants/AppConstants';
+import constants from '../../app/constants/AppConstants';
 
 
 /**

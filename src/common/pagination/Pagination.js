@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Button from 'react-bootstrap/lib/Button';
 
-import injectT from '../../../app/i18n/injectT';
+import injectT from '../../app/i18n/injectT';
 
 const LINK_COUNT = 9;
 

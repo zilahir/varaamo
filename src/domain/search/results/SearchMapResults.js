@@ -9,7 +9,7 @@ import ResourceCardSlider from '../../resource/card/slider/ResourceCardSlider';
 import UnitMarker from '../../../common/map/UnitMarker';
 import UserMarker from '../../../common/map/UserMarker';
 import * as searchUtils from '../utils';
-import constants from '../../../../app/constants/AppConstants';
+import constants from '../../../app/constants/AppConstants';
 
 /**
  * Groups the given resources by unit.
@@ -126,7 +126,7 @@ class SearchMapResults extends React.Component {
     } = this.state;
 
     const groupedResources = groupResourcesByUnit(resources);
-    const filters = searchUtils.getFiltersFromUrl(location);
+    const filters = searchUtils.getFiltersFromUrl(window.location);
 
     // eslint-disable-next-line max-len
     const tileLayerUrl = 'https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoidmFyYWFtbyIsImEiOiJjamU2cWhmdTUwM2ZmMzFud2dvZzFqb2dnIn0.Mj6YrtV9RbJXiU82dqqwhw';

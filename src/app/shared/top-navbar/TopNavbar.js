@@ -20,7 +20,10 @@ class TopNavbar extends Component {
 
   handleLoginClick() {
     const next = encodeURIComponent(window.location.href);
-    window.location.assign(`${window.location.origin}/login?next=${next}`);
+    console.log('window.location.href', window.location.href);
+    console.log('window.location.origin', window.location.origin);
+    console.log('next', next);
+    // window.location.assign(`${window.location.origin}/login?next=${next}`);
   }
 
   render() {

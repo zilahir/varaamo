@@ -4,7 +4,7 @@ import ControlLabel from 'react-bootstrap/lib/ControlLabel';
 import FormGroup from 'react-bootstrap/lib/FormGroup';
 import Select from 'react-select';
 
-import injectT from '../../../../app/i18n/injectT';
+import injectT from '../../../app/i18n/injectT';
 
 export const getOption = (value, options) => {
   if (!value) {

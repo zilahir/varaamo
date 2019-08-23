@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Marker } from 'react-leaflet';
 
-import iconRetinaUrl from '../../../app/assets/map/usermarker-icon-2x.png';
-import iconUrl from '../../../app/assets/map/usermarker-icon.png';
+import iconRetinaUrl from '../../app/assets/map/usermarker-icon-2x.png';
+import iconUrl from '../../app/assets/map/usermarker-icon.png';
 
 const UserMarker = ({ position }) => (
   <Marker

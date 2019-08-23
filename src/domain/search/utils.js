@@ -5,8 +5,9 @@ import sortBy from 'lodash/sortBy';
 import snakeCase from 'lodash/snakeCase';
 import forEach from 'lodash/forEach';
 
-import constants from '../../../app/constants/AppConstants';
+import constants from '../../app/constants/AppConstants';
 import * as urlUtils from '../../common/url/utils';
+
 
 export const getFiltersFromUrl = (location, supportedFilters = constants.SUPPORTED_SEARCH_FILTERS) => {
   const query = new URLSearchParams(location.search);
@@ -85,9 +86,9 @@ export const getClosestPeopleCapacityValue = (value) => {
 export const getMunicipalityOptions = () => {
   let municipalities = constants.DEFAULT_MUNICIPALITY_OPTIONS;
 
-  if (Array.isArray(SETTINGS.CUSTOM_MUNICIPALITY_OPTIONS)
-    && SETTINGS.CUSTOM_MUNICIPALITY_OPTIONS.length) {
-    municipalities = SETTINGS.CUSTOM_MUNICIPALITY_OPTIONS;
+  if (Array.isArray(constants.CUSTOM_MUNICIPALITY_OPTIONS)
+    && constants.CUSTOM_MUNICIPALITY_OPTIONS.length) {
+    municipalities = constants.CUSTOM_MUNICIPALITY_OPTIONS;
   }
 
   return municipalities.map((municipality) => {

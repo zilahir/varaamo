@@ -9,7 +9,7 @@ import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
 import moment from 'moment';
 
-import constants from '../../../../app/constants/AppConstants';
+import constants from '../../../app/constants/AppConstants';
 import SearchSort from '../sort/SearchSort';
 import Pagination from '../../../common/pagination/Pagination';
 import ResourceCard from '../../resource/card/ResourceCard';

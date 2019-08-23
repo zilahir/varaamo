@@ -12,14 +12,14 @@ import {
   Button,
 } from 'react-bootstrap';
 
-import injectT from '../../../../../app/i18n/injectT';
+import injectT from '../../../../app/i18n/injectT';
 import TextField from '../../../../common/form/fields/TextField';
 import ButtonGroupField from '../../../../common/form/fields/ButtonGroupField';
 import DateField from '../../../../common/form/fields/DateField';
 import SelectField from '../../../../common/form/fields/SelectField';
 import iconTimes from '../../../search/filters/images/times.svg';
 import * as dataUtils from '../../../../common/data/utils';
-import constants from '../../../../../app/constants/AppConstants';
+import constants from '../../../../app/constants/AppConstants';
 
 class ManageReservationsFilters extends React.Component {
   static propTypes = {

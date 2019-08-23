@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 
-import { isAccessCodeGenerated, isAccessCodePending } from '../../../../../app/shared/reservation-access-code/helpers';
+import { isAccessCodeGenerated, isAccessCodePending } from '../../../../app/shared/reservation-access-code/helpers';
 import TooltipOverlay from '../../../../common/tooltip/TooltipOverlay';
-import iconClock from '../../../../../app/assets/icons/clock-o.svg';
+import iconClock from '../../../../app/assets/icons/clock-o.svg';
 import PopoverOverlay from '../../../../common/popover/PopoverOverlay';
 
 class ManageReservationsPincode extends Component {
