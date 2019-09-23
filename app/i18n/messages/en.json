@@ -64,6 +64,7 @@
   "common.confirmed": "Approved",
   "common.continue": "Continue",
   "common.denied": "Denied",
+  "common.waitingForPayment": "Waiting",
   "common.eventDescriptionLabel": "Description of the event",
   "common.eventSubjectLabel": "Name of the event",
   "common.numberOfParticipantsLabel": "Number of participants",

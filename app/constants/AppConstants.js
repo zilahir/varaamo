@@ -43,6 +43,10 @@ export default {
       labelBsStyle: 'primary',
       labelTextId: 'common.requested',
     },
+    waiting_for_payment: {
+      labelBsStyle: 'warning',
+      labelTextId: 'common.waitingForPayment',
+    },
   },
   SEARCH_PAGE_SIZE: 30,
   DEFAULT_MUNICIPALITY_OPTIONS: ['Helsinki', 'Espoo', 'Vantaa'],
